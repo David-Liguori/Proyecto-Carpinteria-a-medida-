@@ -1,0 +1,27 @@
+// _footer.scss
+.footer {
+    background-color: $dark-color;
+    color: $light-color;
+    text-align: center;
+    padding: 20px 0;
+
+    .redes-sociales {
+        img {
+            margin: 0 10px; 
+        }
+
+        a {
+            color: $light-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline; 
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}

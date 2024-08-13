@@ -1,0 +1,56 @@
+// Variables
+$primary-color: #c5a694;
+$card-bg: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$hover-bg: lighten($primary-color, 10%);
+
+// Estilos para las tarjetas
+.card {
+    background-color: $card-bg; 
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px $shadow-color;
+    transition: transform 0.3s, box-shadow 0.3s; 
+
+    // Efecto al pasar el cursor
+    &:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 16px $shadow-color; 
+    }
+
+    img {
+        max-height: 200px; 
+        object-fit: cover; 
+        border-top-left-radius: 10px; 
+        border-top-right-radius: 10px; 
+    }
+
+    .card-body {
+        text-align: center; 
+
+        .card-title {
+            font-weight: bold; 
+            margin: 10px 0; 
+            color: $primary-color; 
+        }
+
+        .card-text {
+            color: darken($primary-color, 10%); 
+            margin-bottom: 15px; 
+        }
+
+        .btn {
+            background-color: $primary-color; 
+            border: none; 
+            border-radius: 5px; 
+            color: white; 
+            padding: 10px 15px; 
+            transition: background-color 0.3s;
+
+            // Efecto al pasar el cursor
+            &:hover {
+                background-color: darken($primary-color, 10%); 
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+// _navbar.scss
+.navbar {
+    background-color: $dark-color;
+
+    .navbar-brand {
+        img {
+            width: 90px; 
+        }
+    }
+
+    .nav-link {
+        color: $light-color;
+
+        &:hover {
+            color: $primary-color; 
+        }
+    }
+
+    .navbar-toggler {
+        border-color: transparent;
+
+        &-icon {
+            background-image: none;
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 30px;
+                height: 3px;
+                background-color: $primary-color;
+                margin: 6px 0;
+            }
+        }
+    }
+
+    // Media Query para móviles
+    @media (max-width: $mobile) {
+        .navbar {
+            flex-direction: column;
+        }}
+}

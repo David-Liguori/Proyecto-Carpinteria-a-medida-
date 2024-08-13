@@ -1,0 +1,75 @@
+// Variables
+$bg-color: #f8f9fa;
+$navbar-bg: #343a40;
+$footer-bg: #343a40;
+$link-color: #28a745;
+$text-color: #343a40;
+
+body {
+    background-color: $bg-color;
+}
+
+header {
+    margin-bottom: 20px;
+
+    .navbar {
+        background-color: $navbar-bg;
+
+        .navbar-nav .nav-link {
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+main {
+    text-align: center;
+    margin: 40px 0;
+
+    .owner-image {
+        width: 200px;
+        border-radius: 50%;
+        margin: 20px 0;
+    }
+
+    h3, h4 {
+        color: $text-color;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.footer {
+    background-color: darken($primary-color, 10%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+    .redes-sociales {
+        margin-bottom: 10px;
+
+        img {
+            margin-right: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+                color: lighten(white, 20%);
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
