@@ -98,7 +98,7 @@ h2, h3 {
 }
 
 .footer {
-  background-color: #343a40;
+  background-color: #b38a73;
   color: #ffffff;
   text-align: center;
   padding: 20px 0;
@@ -311,6 +311,96 @@ main p {
 .footer .redes-sociales a:hover {
   color: white;
 }
+.footer .copyright {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: #343a40;
+}
+
+.navbar {
+  background-color: #b38a73;
+}
+
+.navbar .navbar-brand img {
+  width: 90px;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+}
+
+.navbar .nav-link:hover {
+  color: #c5a694;
+}
+
+.navbar .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar .navbar-toggler-icon::before,
+.navbar .navbar-toggler-icon::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #c5a694;
+  margin: 6px 0;
+}
+
+.main {
+  margin: 40px 0;
+}
+
+.owner-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main h3,
+main h4 {
+  color: #343a40;
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #b38a73;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .redes-sociales {
+  margin-bottom: 10px;
+}
+
+.footer .redes-sociales img {
+  margin-right: 10px;
+}
+
+.footer .redes-sociales a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .redes-sociales a:hover {
+  color: white;
+}
+
 .footer .copyright {
   font-size: 14px;
   margin-top: 5px;
